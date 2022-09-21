@@ -1,0 +1,13 @@
+custom_lib:
+  css:
+    theme:
+      assets/css/style.css: { }
+  js:
+    assets/js/custom.js: { }
+
+login:
+  css:
+    theme:
+      assets/css/login-style.css: { }
+
+

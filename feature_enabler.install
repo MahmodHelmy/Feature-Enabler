@@ -1,0 +1,19 @@
+<?php
+use Drupal\feature_enabler\Controller\AddingServicesFeatures;
+use Drupal\feature_enabler\Controller\AddingTaxonomyVocs;
+
+/**
+ * Add new vocabulary 
+ */
+
+function feature_enabler_install() {
+  // AddingTaxonomyVocs
+  $AddingTaxonomyVocs = new AddingTaxonomyVocs;
+  // adding access types taxonomy voc (machine name , voc name , desc , fields = 1)
+  $AddingTaxonomyVocs->HandleAddingTaxonomyVocs('access_types','access types','adding portal access type to use in feature enabler module',Null);
+  // adding access Services taxonomy voc
+  $AddingTaxonomyVocs->HandleAddingTaxonomyVocs('access_services','access services','adding feature to enable or disable depend on action type in enabler module',1);
+  // adding services feature and access types terms
+  $AddingServicesFeatures = new AddingServicesFeatures;
+  $AddingServicesFeatures->HandelAddingServicesFeatures();
+}

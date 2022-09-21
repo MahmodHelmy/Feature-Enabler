@@ -1,0 +1,9 @@
+feature_enabler.access_config:
+  path: '/admin/config/services/access'
+  defaults:
+    _form: '\Drupal\feature_enabler\Form\ActiveServicesType'
+    _title: 'Active Services Type '
+  requirements:  
+    _role: 'administrator+support_admin'
+  options:  
+    _admin_route: TRUE

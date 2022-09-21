@@ -1,0 +1,291 @@
+#header ,#sidebar-first ,.site-footer ,.region-breadcrumb{
+    display: none;
+}
+#main-wrapper{
+    margin: 0px;
+    width: 100%;
+    max-width: initial;
+}
+#main{
+    margin: 0px;
+}
+section.section{
+    padding: 0px !important;
+}
+.content{
+    margin: 0px;
+}
+@font-face {
+    font-family: "Neo_Sans";
+    src: url("../fonts/Neo_Sans/NeoSansArabicLight.ttf");
+    /* IE9 Compat Modes */
+    font-weight: 200;
+    font-style: light;
+  }
+  @font-face {
+    font-family: "Neo_Sans";
+    src: url("../fonts/Neo_Sans/NeoSansArabicRegular.ttf");
+    /* IE9 Compat Modes */
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Neo_Sans";
+    src: url("../fonts/Neo_Sans/NeoSansArabicMedium.ttf");
+    font-weight: 500;
+    font-style: medium;
+  }
+  
+  @font-face {
+    font-family: "Neo_Sans";
+    src: url("../fonts/Neo_Sans/NeoSansArabicBold.ttf");
+    font-weight: 600;
+    font-style: bold;
+  }
+  
+  @font-face {
+    font-family: "Neo_Sans";
+    src: url("../fonts/Neo_Sans/NeoSansArabicBlack.ttf");
+    font-weight: 700;
+    font-style: bold;
+  }
+  
+  @font-face {
+    font-family: "Neo_Sans";
+    src: url("../fonts/Neo_Sans/NeoSansArabicUltra.ttf");
+    font-weight: 900;
+    font-style: ultra;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: "Neo_Sans", Arial, "sans-serif" !important;
+  }
+  
+  :root {
+    --primary: #0e6835;
+    --light_primary: #659d43;
+    --white: #ffffff;
+    --txt-black: #333;
+  }
+  
+  body[dir="ltr"] {
+    text-align: left;
+  }
+  
+  body[dir="rtl"] {
+    text-align: right;
+  }
+  
+  .custom-login-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url("../images/login-bg.png");
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .custom-login-page .left-container {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+            
+  }
+  .custom-login-page .left-container.redirect-container{
+    width: 100%;
+    align-items: initial;
+  }
+  
+  .custom-login-page .left-container .logo_img {
+    width: 300px;
+    height: 100px;
+    margin: 20px auto;
+    margin-bottom: 60px;
+    display: block;
+    background-image: url('../images/logo.svg');
+    text-decoration: none;
+    border:0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .custom-login-page .left-container .left-form {
+    background-color: #f8f8f8;
+    padding: 60px 40px;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    line-height: 24px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .custom-login-page .left-container .left-form .left-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .custom-login-page .left-container .left-form .left_btn {
+    background-color: var(--light_primary);
+    color: var(--white);
+    border: 0px;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    background-color: #337c3d;
+    border-color: #337c3d;
+    font-weight: 400;
+    padding: 10px 50px;
+    width: 100%;
+    margin-top: 18px;
+    background-image: none;
+    border-radius: 0px;
+    font-family: "Neo_Sans", Arial, "sans-serif" !important;
+
+  }
+  
+  .custom-login-page .right-container {
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .custom-login-page .right-container .right-content {
+    padding: 45px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--txt-black);
+  }
+  
+  .custom-login-page .right-container .right-content .right-head {
+    color: var(--primary);
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+  .custom-login-page .right-container .right-content .nic-logo {
+    width: 250px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    background: url('../images/nic.png') transparent center center/250px 100px no-repeat
+  }
+  .custom-login-page .right-container .right-content a{
+      display: inline-block;
+      border: 0px;
+      text-decoration: none;
+  }
+  .content{
+      margin-top: 0px !important;
+  }
+  
+  .custom-login-page .right-container .right-content .Iam_login {
+    background-color: var(--white);
+    color: var(--light_primary);
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 8px 20px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border: 1px solid var(--light_primary);
+    text-decoration: none;
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #f8f8f8;
+    border-radius: 0px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #337c3d;
+    border-radius: 5px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background: #337c3d;
+    border-radius: 5px;
+  }
+  @media (max-width:992px) {
+    .custom-login-page{
+        flex-direction: column;
+    }
+    .custom-login-page .left-container{
+      width:100%;
+      margin-bottom: 20px;
+    }
+    .custom-login-page .left-container .left-content{
+      width:100%;
+    }
+    .custom-login-page .left-container .logo_img{
+      width: 250px;
+      margin: 10px auto;
+      margin-bottom: 20px;
+    }
+    .custom-login-page .right-container{
+      width:100%;
+    }
+    .custom-login-page .right-container .right-content{
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .custom-login-page .left-container .left-form{
+      max-width: 95%;
+      padding: 20px 20px;
+    }
+    .custom-login-page .left-container .left-form .left_btn{
+      font-size: 17px;
+      white-space: break-spaces;
+      padding: 10px;
+    }
+    .custom-login-page .right-container .right-content .Iam_login{
+      font-size: 16px;
+    }
+  }
+  /*# sourceMappingURL=style.css.map */
